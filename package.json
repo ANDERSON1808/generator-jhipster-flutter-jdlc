@@ -1,0 +1,69 @@
+{
+  "name": "generator-jhipster-flutter-jdlc",
+  "version": "1.6.5",
+  "description": "A Flutter module for JHipster. It will use Flutter as the frontend",
+  "keywords": [
+    "yeoman-generator",
+    "jhipster-module",
+    "jhipster-6"
+  ],
+  "homepage": "https://github.com/ANDERSON1808/generator-jhipster-flutter-jdlc.git",
+  "author": {
+    "name": "Anderson Losada",
+    "url": "https://github.com/ANDERSON1808"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANDERSON1808/generator-jhipster-flutter-jdlc.git"
+  },
+  "dependencies": {
+    "chalk": "4.1.0",
+    "eslint-config-airbnb": "18.1.0",
+    "generator-jhipster": ">=6.0.0",
+    "jhipster-core": "7.3.2",
+    "lodash": "4.17.19",
+    "mkdirp": "1.0.4",
+    "pluralize": "8.0.0",
+    "prettier": "2.0.5",
+    "randexp": "0.5.3",
+    "semver": "7.3.2",
+    "shelljs": "0.8.4"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "ejs-lint": "1.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.2.0",
+    "eslint-plugin-import": "2.21.2",
+    "fs-extra": "9.0.1",
+    "inquirer": "7.1.0",
+    "jsdoc": "3.6.4",
+    "mocha": "8.0.1",
+    "sinon": "9.0.2",
+    "yeoman-assert": "3.1.1",
+    "yeoman-test": "2.6.0"
+  },
+  "resolutions": {
+    "inquirer": "7.0.4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "npm run lint -- --fix",
+    "pretest": "npm run lint",
+    "test": "npm run test:unit -- test/*.spec.js",
+    "test:unit": "mocha --timeout 120000 --slow 0 --reporter spec",
+    "jsdoc": "jsdoc --configure jsdoc-conf.json",
+    "release": "git push && git push --tags && npm publish",
+    "release:patch": "npm version patch -a -m \"Update to %s\" && npm run release",
+    "release:minor": "npm version minor -a -m \"Update to %s\" && npm run release",
+    "release:major": "npm version major -a -m \"Update to %s\" && npm run release"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ANDERSON1808/generator-jhipster-flutter-jdlc.git/issues"
+  }
+}
