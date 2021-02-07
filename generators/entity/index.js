@@ -116,7 +116,7 @@ module.exports = class extends BaseGenerator {
                 this.context.baseName = yoRC['generator-jhipster-flutter-jdlc'].promptValues.baseName;
                 this.context.camelizedBaseName = _.camelCase(this.context.baseName);
                 this.context.camelizedUpperFirstBaseName = _.upperFirst(this.context.camelizedBaseName);
-                this.context.packageName = yoRC['generator-jhipster-flutter-jdcl'].promptValues.packageName;
+                this.context.packageName = yoRC['generator-jhipster-flutter-jdlc'].promptValues.packageName;
                 this.context.enableTranslation = yoRC['generator-jhipster-flutter-jdlc'].promptValues.enableTranslation;
 
                 if (context.backendPath) {
@@ -669,7 +669,7 @@ module.exports = class extends BaseGenerator {
 
             utils.rewriteFile({
                 file: appClassPath,
-                needle: 'jhipster-merlin-needle-import-add',
+                needle: 'jhipster-jdlc-needle-import-add',
                 splicable: [
                     this.stripMargin(routeImport)
                 ]
@@ -678,7 +678,7 @@ module.exports = class extends BaseGenerator {
             const addRoute = `...${entityClass}Routes.map,`;
             utils.rewriteFile({
                 file: appClassPath,
-                needle: 'jhipster-merlin-needle-route-add',
+                needle: 'jhipster-jdlc-needle-route-add ',
                 splicable: [
                     this.stripMargin(addRoute)
                 ]
@@ -701,7 +701,7 @@ module.exports = class extends BaseGenerator {
             const newMenuImportEntry = `import 'package:${baseName}/entities/${entityFileName}/${entityFileName}_route.dart';`;
             utils.rewriteFile({
                 file: drawerClassPath,
-                needle: 'jhipster-merlin-needle-menu-import-entry-add',
+                needle: 'jhipster-jdl-needle-menu-import-entry-add',
                 splicable: [
                     this.stripMargin(newMenuImportEntry)
                 ]

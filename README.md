@@ -1,6 +1,4 @@
-<img width="400" src="https://raw.githubusercontent.com/merlinofcha0s/herofactory-ghost-assets/master/2020/07/flutter_jhipster-1.png">
-<br/>
-
+![CodeGen](https://i.picasion.com/pic90/be11ad50e54277263090f6cc568de530.gif)
 ![Generator](https://github.com/merlinofcha0s/generator-jhipster-flutter/workflows/Generator/badge.svg?branch=master&event=push)
 ![npm version](https://img.shields.io/badge/Flutter-passing-green)
 ![npm](https://img.shields.io/badge/npm-passing-green)
